@@ -1,0 +1,137 @@
+body {
+    text-align:left;
+    margin: 0 0 0 2em;
+}
+
+
+div.choice-block, div.output-block {
+    display: block;
+    margin: 1em;    
+}
+
+h1 {
+    text-align:center;
+    margin-bottom: 1em;
+}
+
+span.title {
+    margin: 1em 0 1em 4em;
+    width:25%;
+    display:inline-block;
+    text-align: left;
+    /* width:40%; */
+}
+
+.unpicked {
+    cursor: pointer;
+}
+
+.unpicked, .picked-el {
+    transition: 0.3s;
+}
+
+img[alt*="storey"] {
+    width: 150px;
+    margin-right: 2em;
+    transition:0.3s;
+}
+
+div.color {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    display: inline-block;
+    border: 2px solid #eee;
+    transition: 0.3s ease;
+}
+
+img.exterior {
+    width: 100px;
+    transition: 0.3s;
+}
+
+div#blue {
+    background-color: #027bff;
+}
+
+div#grey {
+    background-color: #868e96;
+}
+div#green {
+    background-color: #26a745;
+}
+div#red {
+    background-color: #dc3545;
+}
+div#yellow {
+    background-color: #ffc108;
+}
+div#green-dark {
+    background-color: #18a2b8;
+}
+div#white {
+    background-color: #f8f9fa;
+}
+div#black {
+    background-color: #343a40;
+}
+
+ input[class="unpicked"] {
+    display:none;
+}
+
+button#submit {
+    margin: 0 auto;
+    display: block;
+    padding: 1em;
+    border-radius: 7px;
+}
+
+img[alt*="storey"].unpicked:hover, div.unpicked:hover, img.exterior:hover {
+    box-shadow: 0.1em 0.3em 1em #222;
+}
+
+img[alt*="storey"].unpicked:hover, img[alt*="storey"].picked-el {
+    width: 160px;
+    transition: 0.3s;    
+    border: 2px solid green;
+    padding: .2em;
+}
+
+div.unpicked:hover {
+    width: 60px;
+    height: 60px;
+    transition: 0.3s;
+    border: 2px solid green;
+    padding: .2em;
+}
+
+div.picked-el {
+    width: 60px;
+    height: 60px;
+    border: 2px solid green;
+    padding: .2em;
+}
+
+img.exterior:hover, img.exterior.picked-el {
+    width: 110px;
+    transition: 0.3s;
+    border: 2px solid green;
+    padding: .2em;
+}
+
+input {
+    padding: .7em;
+}
+
+div.err p {
+    font-variant-caps: all-small-caps;
+    color: red;
+    text-align: center;
+    padding: 1em;
+    transition: 0.3s;
+}
+
+label {
+    margin-right: 1em;
+}

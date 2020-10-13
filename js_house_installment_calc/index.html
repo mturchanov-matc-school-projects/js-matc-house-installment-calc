@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Project1 - JS</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <h1>Project 1 - Javascript Fundamentals</h1>
+        
+        <div class="choice-block">
+            <span class="title">Single Story/Two Story: </span> 
+            <!-- Icons made by https://www.flaticon.com/authors/freepik -->
+            <img class="storeyEl unpicked" dataValue="1" src="images/one-storey.png" alt="one storey house" onclick="markElement(this)">   
+            <!-- Icons made by https://www.flaticon.com/authors/freepik -->
+            <img class="storeyEl unpicked" dataValue="2" src="images/two-storey.png" alt="two storey house" onclick="markElement(this)">
+        </div>
+        <div class="choice-block">
+            <span class="title">Color: </span> 
+            <div class="color unpicked" dataValue="blue" id="blue" onclick="markElement(this)"></div>
+            <div class="color unpicked" dataValue="grey" id="grey" onclick="markElement(this)"></div>
+            <div class="color unpicked" dataValue="green" id="green" onclick="markElement(this)"></div>
+            <div class="color unpicked" dataValue="red" id="red" onclick="markElement(this)"></div>
+            <div class="color unpicked" dataValue="yellow" id="yellow" onclick="markElement(this)"></div>
+            <div class="color unpicked" dataValue="green-dark" id="green-dark" onclick="markElement(this)"></div>
+            <div class="color unpicked" dataValue="white" id="white" onclick="markElement(this)"></div>
+            <div class="color unpicked" dataValue="black" id="black" onclick="markElement(this)"></div>
+        </div>
+
+        <div class="choice-block">
+            <span class="title">Exterior Material: </span>
+            <img class="exterior unpicked" dataValue="vinyl" src="images/vinyl.png" alt="vinyl siding" onclick="markElement(this)" >
+            <!-- Icons made by https://www.flaticon.com/authors/good-ware> -->
+            <img class="exterior unpicked" dataValue="wood" src="images/woods.png" alt="wood siding" onclick="markElement(this)" >
+            <!-- Icons made by http://www.freepik.com/ -->
+            <img class="exterior unpicked" dataValue="brick" src="images/trowel.png" alt="trowel siding" onclick="markElement(this)" >
+            <!-- Icons made by https://www.flaticon.com/free-icon/wall_686921 -->
+            <img class="exterior unpicked" dataValue="stucco" src="images/wall.png" alt="brick siding" onclick="markElement(this)" >
+            <!-- Icons made by http://www.freepik.com/ -->
+            <img class="exterior unpicked" dataValue="stone" src="images/stones.png" alt="stone siding" onclick="markElement(this)" >
+        </div>
+
+        <div class="choice-block">
+            <span class="title squareFootageTitle">Square Footage: </span>
+            <input class="squareFootage" type="text" placeholder="sq.footage"
+                    name="SquareFootage" onblur="markElement(this)">
+        </div>
+
+        <div class="choice-block">
+            <span class="title">Garage(# of vehicles): </span>
+            <label garageSize="1">1<input class="garageSize" type="radio" name="garageSize" value="1" onblur="markElement(this)"></label>
+            <label garageSize="2">2<input class="garageSize" type="radio" name="garageSize" value="2" onblur="markElement(this)"></label>
+            <label garageSize="3">3<input class="garageSize" type="radio" name="garageSize" value="3" onblur="markElement(this)"></label>
+        </div>
+
+        <div id="btn-result">
+            <button id="submit" onclick="getOutput()">Get Detailed Estimate</button>
+        </div>
+
+
+        <script src="processHouseIntstallment.js"></script>
+    </body>
+</html>
